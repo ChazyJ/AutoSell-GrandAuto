@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1b1b1b"
+    tools:context=".ItemsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="СПИСОК ДОСТУПНЫХ АВТОМОБИЛЕЙ:"
+        android:textColor="#7EFDFDFD"
+        android:textSize="15sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/itemsList"
+        android:layout_width="365dp"
+        android:layout_height="566dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp" />
+    activity_items.xml
+    <Button
+        android:id="@+id/item_list_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#ff0207"
+        android:fontFamily="@font/inter_bold"
+        android:onClick="onOrderButtonClick"
+        android:text="Заказать автомобиль"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/item_list_button1"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#ff0207"
+        android:fontFamily="@font/inter_bold"
+        android:text="Личный кабинет"
+        android:textColor="#fff" />
+
+
+</LinearLayout>
